@@ -1,0 +1,252 @@
+<FORM method=post action="cgi-bin/script.pl">
+
+<div style="text-align: center; font-size: 60px;background-color:#87CEFA;">
+Registration System JM3D 
+<br>
+<left><IMG SRC="logo (1).png" name="image" ALT="Una imagen" width=250 HEIGHT=210></left>
+</div>
+     <marquee id="ejemplo" direction=left>
+        <FONT FACE="comic sans" COLOR="Black">
+          <H2>Control de vehiculos</H2> 
+        </font>
+     </marquee>
+
+<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:center;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:500px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-240px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+<center>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="pagina proyecto.html">Inicio</a></li>
+<li><a href="">Ingresar</a>
+
+		<ul>
+						<li><a href="Ingresar datos.html">Registrarse </a></li>
+						<li><a href="Ingresar vehiculo.html"> Registrar vehiculo</a></li>						
+						<li><a href="Novedades.html">Informar novedades usuario</a></li>
+						<li><a href="inv.html"> Informar novedades vehiculos</a></li>
+						
+
+
+					</ul></li>
+				<li><a href="">Actualizar</a>
+
+		<ul>
+						<li><a href="Estado.html">Estado persona</a></li>
+						
+
+						<li><a href="EV.html">Eliminar vehiculo</a></li>
+					</ul></li>
+				<li><a href="">Modificar</a>
+
+		<ul>
+						<li><a href="modificar vehiculo.html">Datos persona </a>
+						<li><a href="vehiculo.html">Datos Vehiculos</a></li>
+					</ul></li>
+					<li><a href="">Consultar</a>
+
+		<ul>
+						<li><a href="datos persona.html"> Datos persona  </a></li>
+						<li><a href="Dv i.html">Datos vehiculo</a></li>
+						<li><a href="comprobar pago.html"> Pagos </a></li>
+						<li><a href="informe.html">Reportes</a></li>
+
+
+					</ul></li>
+
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="Mision.html">mision</a></li>
+						<li><a href="vision.html">Vision </a></li>
+<li><a href="quienes somos.html">Quienes somos</a></li>
+						<li><a href="integrantes.html">Integrantes</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		
+</div>
+</div>
+</center>
+	
+
+<br><br>
+<br><br>
+<br>	
+ <body background="fondo.jpg">
+<center>
+
+<br>
+<br>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Igresar Datos Vehiculo</title>
+</head>
+ 
+<body>
+ 
+<h3>Ingresar Datos Vehiculo</h3>
+ 
+<form action="/php/insertar_subasta.php" method="post" enctype="multipart/form-data">
+ 
+<fieldset>
+  <legend>Datos Basicos del Propietario</legend>
+ 
+  <label for="nombre">Nombre</label> <br/>
+  <input type="text" name="nombre" id="nombre" size="30" maxlength="100" />
+<br>
+<br>
+
+<label for="Apellido">Apellido</label> <br/>
+  <input type="text" name="nombre" id="nombre" size="30" maxlength="100" />
+ <br/><br/>
+
+<label>Identificacion</label><br/>
+<SELECT name="Identificacion">
+<option value=" selected="selected">- selecciona -</option>
+<OPTION VALUE="Cedula de ciudadania">Cedula de ciudadania</OPTION>
+<OPTION VALUE="Tarjeta De Identidad">Tarjeta De Identidad</OPTION>
+
+</SELECT>
+<br>
+<br>
+
+
+<label>Cargo</label><br/>
+<SELECT name="Cargo">
+<option value=" selected="selected">- selecciona -</option>
+<OPTION VALUE="Aprendiz">Aprendiz</OPTION>
+<OPTION VALUE="Instructor">Instructor</OPTION>
+<OPTION VALUE="Empleado De La Entidad">Empleado De La Entidad</OPTION>
+</SELECT>
+<br>
+<br>
+<BR>
+
+
+
+<fieldset>
+<legend>Datos del vehiculo</legend>
+ 
+<label>Tipo De Vehiculo</label> <br/>
+<br>
+ <input type="radio" name="tipo" value="Bicicleta" checked="checked" />Bicicleta <br/>
+ <input type="radio" name="tipo" value="Motocicleta" />Motocicleta <br/>
+
+<br<>
+<br>
+
+<label for="Color Del Vehiculo">Color Del Vehiculo</label> <br/>
+
+<SELECT name="Color">
+<option value=" selected="selected">- selecciona -</option>
+<OPTION VALUE="Negro">Negro</OPTION>
+<OPTION VALUE="Blanco">Blanco</OPTION>
+<OPTION VALUE="Azul">Azul</OPTION>
+<OPTION VALUE="Rojo">Rojo</OPTION>
+<OPTION VALUE="Otro">Otro</OPTION>
+</SELECT>
+<br>
+<br>
+
+
+<label for="Si su respuesta fue otro Escriba">Si su respuesta fue "otro" escriba</label> <br/>
+<label for="Cual">cual</label> <br/>
+ <input type="text" name="nombre" id="cual" size="30" maxlength="100" />
+<br>
+<br>
+
+<label for="Placa">Placa</label> <br/>
+ <input type="text" name="Placa" id="Placa" size="30" maxlength="100" />
+<br>
+<br>
+
+<label for="Serial">Serial</label> <br/>
+ <input type="text" name="serial" id="serial" size="30" maxlength="100" />
+<br>
+<br>
+
+
+<label for="Marca">Marca</label> <br/>
+ <input type="text" name="Modelo" id="Marca" size="30" maxlength="100" />
+<br>
+<br>
+</select>
+<br/><br/>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+<center>
+<TR>
+<TD COLSPAN=2>
+<INPUT type="submit" value="Enviar">
+<input type="reset" name="limpiar" value="Limpiar" />
+<input type="button" name="guardar" value="Guardar Cambios" />
+</TD>
+</TR>
+</TABLE>
+</FORM>
+</center>
+
+
+
+
+

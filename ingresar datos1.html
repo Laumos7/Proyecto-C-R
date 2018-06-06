@@ -1,0 +1,371 @@
+<html>
+</head>
+<div style="text-align: center; font-size: 15px;background-color:#4682B4;">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+      * {box-sizing:border-box}
+      body {font-family: Verdana,sans-serif;margin:0}
+     .mySlides {display:none}
+
+      /* Slideshow container */
+      .slideshow-container {
+      max-width:700px;
+ 
+      position: relative;
+      margin: auto;
+      }
+
+      /* Next & previous buttons */
+     .prev, .next {
+     cursor: pointer;
+     position: relative;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: black;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     }
+
+     /* Position the "next button" to the right */
+    .next {
+    right: -50;
+    border-radius: 3px 0 0 3px;
+    }
+ /* Position the "prev button" to the left */
+    .prev {
+    left: 50;
+    border-radius: 3px 0 0 3px;
+    }
+   
+
+    /* Number text (1/4 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+ 
+  
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 500px) {
+    .prev, .next,.text {font-size: 11px}
+    }
+ </style>
+ </head>
+ <body>
+
+   <div class="slideshow-container">
+       <div class="mySlides fade">
+       <div class="numbertext">1 / 4</div>
+       <img src="imagenc1.jpg" style="width:100%">
+   </div>
+
+   <div class="mySlides fade">
+       <div class="numbertext">2 / 4</div>
+       <img src="imagenc2.jpg" style="width:100%">
+   </div>
+
+  <div class="mySlides fade">
+       <div class="numbertext">3 / 4</div>
+       <img src="imagenc3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+       <div class="numbertext">4 / 4</div>
+       <img src="imagenc4.jpg" style="width:100%">
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+ </div>
+
+ <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+  }
+  
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+ }
+
+ </script>
+
+</div>
+     
+
+<style type="text/css">
+			
+			* {
+				margin:1px;
+				padding:1px;
+			}
+			
+			#header {
+				margin:center;
+				width:800px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:300px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:center;
+			}
+			
+			.nav li ul li ul {
+				right:-300px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+<center>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="pagina proyecto.html">Inicio</a></li>
+<li><a href="">Ingresar</a>
+
+		<ul>
+						<li><a href="Ingresar datos.html">Registrarse </a></li>
+						<li><a href="Ingresar vehiculo.html"> Registrar vehiculo</a></li>						
+						<li><a href="Novedades.html">Informar novedades usuario</a></li>
+						<li><a href="inv.html"> Informar novedades vehiculos</a></li>
+						
+
+
+					</ul></li>
+				<li><a href="">Actualizar</a>
+
+		<ul>
+						<li><a href="Estado.html">Estado persona</a></li>
+						
+
+						<li><a href="EV.html">Eliminar vehiculo</a></li>
+					</ul></li>
+				<li><a href="">Modificar</a>
+
+		<ul>
+						<li><a href="modificar vehiculo.html">Datos persona </a>
+						<li><a href="vehiculo.html">Datos Vehiculos</a></li>
+					</ul></li>
+					<li><a href="">Consultar</a>
+
+		<ul>
+						<li><a href="datos persona1.html"> Datos persona  </a></li>
+						<li><a href="Dv i.html">Datos vehiculo</a></li>
+						<li><a href="comprobar pago.html"> Pagos </a></li>
+						<li><a href="informe.html">Reportes</a></li>
+
+
+					</ul></li>
+
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="Mision.html">mision</a></li>
+						<li><a href="vision.html">Vision </a></li>
+<li><a href="quienes somos.html">Quienes somos</a></li>
+						<li><a href="integrantes.html">Integrantes</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		
+</div>
+</div>
+</center>
+	
+
+<br><br>
+<br><br>
+<br>	
+ <body background="fondo.jpg">
+<center>
+	
+<form action="/php/insertar_subasta.php" method="post" enctype="multipart/form-data">
+ 
+<fieldset>
+  <legend>Datos Basicos del Propietario</legend>
+  
+               Nombre:<br><input type="text" name="nombre" placeholder="name" pattern="[A-Z a-z]{1,16}" value required ><br>Example:Jose Luis
+               <Br><br>
+
+               Apellido:<br><input type="text" Name="apellido" placeholder="lastname" pattern="[A-Z a-z]{1,16}" Maxlenght=20 Size=20 value required><br>Example:Sanchez Ramirez<br><br>
+
+               Genero:
+               <INPUT TYPE="radio" NAME="boton1" VALUE="1"> Masculino 
+               <INPUT TYPE="radio" NAME="boton1" VALUE="2">Femenino<BR> <Br>
+ 
+               Identificacion:<br>
+               <select name="tipo de documento" size="1">
+                 <option value="cedula de ciudadania">Cedula de ciudadania</option>
+ 	         <option value="Tarjeta de Identidad">Tarjeta de identidad</option>
+	         <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+	         <option value="Pasaporte">Pasaporte</option>
+                 <option value="Nit">Nit</option>
+               </select>
+
+               <input type="number" Name="identificacion" value required>
+               <br><br>
+
+               Fecha de nacimiento:<br>
+               <input type="date" Name="fecha de nacimiento" value required>
+               <br><br>
+
+               Ciudad:<br>
+               <SELECT NAME="ciudad" SIZE="1">
+             
+
+  <option value="0">Bogotá</option>
+<option value="1" >villavicencio</option>
+    <option value="2" >Barranquilla</option>
+    <option value="3" >Cartagena</option>
+    <option value="4" >San Andres y Providencia</option>
+<option value="5"  >Atlantico</option>
+<option value="6" >Bolivar</option>
+<option value="7"  >Cesar</option>
+<option value="8"  >Cordoba</option>
+<option value="9"  >Guiajira</option>
+<option value="10" >Magdalena</option>
+<option value="11"  >Saucre</option>
+<option value="12" >Antioquia</option>
+<option value="13" >Boyacá</option>
+<option value="14" >Caldas</option>
+<option value="15"  >Cundinamarca</option>
+<option value="16" >Huila</option>
+<option value="17"  >Norte de santander</option>
+<option value="18"  >Quindio</option>
+<option value="19" >Risaralda</option>
+<option value="20" >Santander</option>
+<option value="21" >Tolima</option>
+<option value="22"  >Cauca</option>
+<option value="4"  >chocó</option>
+<option value="4" >Nariño</option>
+<option value="4" >Valle</option>
+<option value="4"  >Amazonas</option>
+<option value="4"  >caquetá</option>
+<option value="4" >Guainía</option>
+<option value="4" >Putumayo</option>
+<option value="4"  >Vaupés</option>
+<option value="4">Arauca</option>
+<option value="4" >Casanare</option>
+<option value="4"  >Meta</option>
+<option value="4" >Vichada</option>
+</option>  </select><BR><BR>
+Estado Civil:<select name="estado_civil" >
+    <option value="0" STYLE='width:80px; HEIGHT:35px'>Soltero</option>
+    <option value="1"  STYLE='width:80px; HEIGHT:25px'>Casado</option>
+    <option value="2"  STYLE='width:80px; HEIGHT:25px'>Separado</option>
+    <option value="3"  STYLE='width:80px; HEIGHT:25px'>Divorciado</option>
+    <option value="4"  STYLE='width:80px; HEIGHT:25px'>Viudo</option>
+               </SELECT>
+               <br><br>
+
+               Direccion:<br>
+               <input type="text" Name:"direccion" Maxlenght=20 Size=20  required><br> <Br>
+
+               Telefono fijo:<br>
+               <input type="number" Name:"telefono fijo" value Maxlenght=10 Size=10  required><br> <Br>
+               
+               Telefono celular:<br>
+               <input type="number" Name:"telefono celular" value Size=10 Maxlenght=10   required><br> <Br>
+               
+               Correo:<br>
+               <input type="email" Name:"correo"value Maxlenght=20 Size=20  required><br> <Br>
+
+
+
+
+
+</form>
+</center>
+</fieldset> 
+  <br/><br/>
+ <center><INPUT TYPE="submit" STYLE='width:80px; HEIGHT:35px'><INPUT TYPE="Reset" STYLE='width:90px; HEIGHT:35px'>
