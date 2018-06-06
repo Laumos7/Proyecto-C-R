@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Gestionar vehiculos</title>
+</head>
+
+    
+<div style="text-align: center; font-size: 60px;background-color:#87CEFA;">
+Registration System JM3D 
+<br>
+<left><IMG SRC="logo (1).png" name="image" ALT="Una imagen" width=250 HEIGHT=210></left>
+</div>
+
+      <marquee id="ejemplo" direction=left>
+        <FONT FACE="comic sans" COLOR="Black">
+          <H2>Control de vehiculos</H2> 
+        </font>
+     </marquee>
+
+<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:center;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:500px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-240px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+<center>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="pagina proyecto.html">Inicio</a></li>
+<li><a href="">Ingresar</a>
+
+		<ul>
+						<li><a href="Ingresar datos1.html">Registrarse </a></li>
+						<li><a href="Ingresar vehiculo1.html"> Registrar vehiculo</a></li>						
+						<li><a href="Novedades1.html">Informar novedades usuario</a></li>
+						<li><a href="inv1.html"> Informar novedades vehiculos</a></li>
+						
+
+
+					</ul></li>
+				<li><a href="">Actualizar</a>
+
+		<ul>
+						<li><a href="Estado1.html">Estado persona</a></li>
+						
+
+					</ul></li>
+				<li><a href="">Modificar</a>
+
+		<ul>
+						<li><a href="modificar vehiculo1.html">Datos persona </a>
+						<li><a href="vehiculo1.html">Datos Vehiculos</a></li>
+					</ul></li>
+					<li><a href="">Consultar</a>
+
+		<ul>
+						<li><a href="datos persona1.html"> Datos persona  </a></li>
+						<li><a href="Dv i1.html">Datos vehiculo</a></li>
+		
+
+
+					</ul></li>
+
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="Mision1.html">mision</a></li>
+						<li><a href="vision1.html">Vision </a></li>
+<li><a href="quienes somos1.html">Quienes somos</a></li>
+						<li><a href="integrantes1.html">Integrantes</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		
+</div>
+</div>
+</center>
+	
+
+<br><br>
+<br><br>
+<br>	
+ <body background="fondo.jpg">
+<center>
+
+
+
+
+<body>
+<body background="z.jpg">
+<P ALIGN=center><FONT SIZE=5> <FONT COLOR=black>
+ Gestión de Vehiculos:<BR> 
+<P ALIGN=center><img src="s.jpg" width="205"height="215"> <BR><BR><BR>
+
+BUSCAR PROPIETARIO:<INPUT TYPE="text"><INPUT TYPE="button" NAME="Consultar" Value="Consultar Estado" STYLE='width:150px; HEIGHT:25px'>
+
+
+<form>
+
+<P ALIGN=center><FONT SIZE=5> <FONT COLOR=black>
+Actualizacion de Gestión de Vehiculos:<BR></center>
+
+<center><table border=2 width=30% >
+<tr><td>Propietario</td><td>Documento</td><td>Vehiculo</td><td>Placa</td><td>Serial</td><td>Marca</td><td>Color</td><td>Fallas</td><td>Actualize datos</td></tr>
+
+<tr><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"><td><INPUT TYPE="text"></td><td><INPUT TYPE="button" NAME="Actualizar" Value="Actualizar" STYLE='width:80px; HEIGHT:35px'></td></tr>
+
+<tr><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"><td><INPUT TYPE="text"></td><td><INPUT TYPE="button" NAME="Actualizar" Value="Actualizar" STYLE='width:80px; HEIGHT:35px'></td></tr>
+
+<tr><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"><td><INPUT TYPE="text"></td><td><INPUT TYPE="button" NAME="Actualizar" Value="Actualizar" STYLE='width:80px; HEIGHT:35px'></td></tr>
+
+<tr><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"></td><td><INPUT TYPE="text"><td><INPUT TYPE="text"></td><td><INPUT TYPE="button" NAME="Actualizar" Value="Actualizar" STYLE='width:80px; HEIGHT:35px'></td></tr>
+</table><BR><BR>
+
+
+
+
+<center><INPUT TYPE="button" NAME="Gestionar" Value="Gestionar" STYLE='width:80px; HEIGHT:35px'></center>
+
+
+</FORM>
+</body>
