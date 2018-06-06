@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta</title>
+    </head>
+    <body>
+        <table border="1px"> 
+            <h1>Consulta de Informacion del Vehiculo</h1>
+
+            <h3>Informacion de la Moto</h3>
+            <tr>
+                <td>Usuario</td>
+                <td>Tipo</td>
+                <td>Marca</td>
+                <td>Modelo</td>
+                <td>Color</td>
+
+            </tr>
+            <tr>
+                <td>Oscar</td>
+                <td>Calle</td>
+                <td>Auteco</td>
+                <td>2015</td>
+                <td>Negra</td>
+            </tr>
+        </table>
+
+        <table border="1px">
+            
+            <h3>Informacion de la Bicicleta</h3>
+            <tr>
+                <td>Usuario</td>
+                <td>Tipo</td>
+                <td>Marca</td>
+                <td>Modelo</td>
+                <td>Color</td>
+
+            </tr>
+            <tr>
+                <td>miguel</td>
+                <td>Semicareras</td>
+                <td>Clasf</td>
+                <td>2015</td>
+                <td>Amarilla</td>
+
+        </table>
+    </body>
+</html>
